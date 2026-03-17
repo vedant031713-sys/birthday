@@ -13,16 +13,21 @@ html, body {
     font-family: "Poppins", sans-serif;
 }
 
-/* This ensures backgrounds ALWAYS fill the screen */
+/* FIXED BACKGROUND — NEVER CROPS ANYTHING */
 .page {
     width: 100vw;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+
     display: none;
     justify-content: center;
     align-items: center;
+
+    /* adds soft black edges if device ratio is different */
+    background-color: #f8e6ec;
 }
 
 /* Hearts Layer */
@@ -90,11 +95,10 @@ button {
     transition: 0.4s ease;
 }
 
-/* ---------------------- PAGE 2 (LOADING) ---------------------- */
+/* ---------------------- PAGE 2 ---------------------- */
 
 #loadingPage {
     background-image: url("loading-bg.png");
-    display: none;
 }
 
 .loadingContent {
@@ -108,6 +112,7 @@ button {
     animation: kittyBounce 1.6s infinite ease-in-out;
 }
 
+/* animation */
 @keyframes kittyBounce {
     0% { transform: translateY(0); }
     50% { transform: translateY(-12px); }
@@ -135,11 +140,10 @@ button {
     100% { content: "..."; }
 }
 
-/* ---------------------- PAGE 3 (COUNTDOWN) ---------------------- */
+/* ---------------------- PAGE 3 ---------------------- */
 
 #countdownPage {
     background-image: url("countdown-bg.png");
-    display: none;
     padding-top: 5vh;
 }
 
@@ -172,7 +176,7 @@ button {
     color: #6b4d57;
 }
 
-/* ---------------------- RESPONSIVE FIXES ---------------------- */
+/* ---------------------- RESPONSIVE ---------------------- */
 
 /* Tablets */
 @media (max-width: 1024px) {
