@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For You My Bby</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<!-- PAGE 1 -->
+<div id="welcomePage" class="welcome page">
+    <h1 class="title">Hey my bby ❤️</h1>
+
+    <p class="sub">
+        This is a small gift for youuu…<br>
+        Are you ready to see and experience the lovely surprise?
+    </p>
+
+    <div class="buttons">
+        <button id="yesBtn">YES</button>
+        <button id="noBtn">NO</button>
+    </div>
+
+    <div id="noAnim" class="no-animation">heyyy don’t say no 😭👉👈</div>
+</div>
+
+
+<!-- PAGE 2 — LOADING PAGE -->
+<div id="loadingPage" class="page" style="display:none;">
+
+    <div class="loadingContent">
+        <img src="kitty.gif" class="kitty">
+
+        <!-- 💖 TYPING TEXT -->
+        <p class="loadText">
+            <span id="typingText"></span><span class="dots"></span>
+        </p>
+    </div>
+
+</div>
+
+
+<!-- PAGE 3 — COUNTDOWN -->
+<div id="countdownPage" class="page" style="display:none;">
+    <div class="countdown-box">
+        <h1>Counting down to your day 🎂</h1>
+        <div id="countdown">Loading...</div>
+        <p>Every second closer to celebrating you ❤️</p>
+    </div>
+</div>
+
+
+<!-- SCRIPTS + SOUNDS -->
+<script src="script.js"></script>
+<audio id="introSound" src="sounds/intro.mp3"></audio>
+<audio id="btnSound" src="sounds/button.mp3"></audio>
+
+</body>
+</html>
