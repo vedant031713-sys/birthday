@@ -6,7 +6,14 @@
 </head>
 <body>
 
+<!-- 💗 HEARTS -->
 <div class="hearts"></div>
+
+<!-- ✨ SPARKLES -->
+<div class="sparkles" id="sparkleLayer"></div>
+
+<!-- 🎉 CONFETTI -->
+<canvas id="confettiCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:20;width:100vw;height:100vh;"></canvas>
 
 <!-- PAGE 1 -->
 <div id="welcomePage" class="welcome page">
@@ -22,39 +29,76 @@
         <button id="noBtn">NO</button>
     </div>
 
-    <div id="noAnim" class="no-animation">heyyy don’t say no 😭👉👈</div>
+    <div id="noAnim" class="no-animation">heyyy don't say no 😭👉👈</div>
 </div>
 
 
 <!-- PAGE 2 — LOADING PAGE -->
 <div id="loadingPage" class="page" style="display:none;">
-
     <div class="loadingContent">
         <img src="kitty.gif" class="kitty">
-
-        <!-- 💖 TYPING TEXT -->
         <p class="loadText">
             <span id="typingText"></span><span class="dots"></span>
         </p>
     </div>
-
 </div>
 
 
 <!-- PAGE 3 — COUNTDOWN -->
 <div id="countdownPage" class="page" style="display:none;">
     <div class="countdown-box">
-        <h1>Counting down to your day 🎂</h1>
-        <div id="countdown">Loading...</div>
-        <p>Every second closer to celebrating you ❤️</p>
+        <h1>ohh princess my princess ⭐🤗🧿</h1>
+
+        <div id="countdown">
+            <div class="cd-unit"><span id="cd-days">00</span><label>Days</label></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span id="cd-hours">00</span><label>Hours</label></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span id="cd-mins">00</span><label>Mins</label></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit pulse" id="cd-secs-box"><span id="cd-secs">00</span><label>Secs</label></div>
+        </div>
+
+        <p>the beauty itself was born on this day ❤️</p>
     </div>
 </div>
 
 
-<!-- SCRIPTS + SOUNDS -->
+<!-- PAGE 4 — GALLERY -->
+<div id="galleryPage" class="page" style="display:none;">
+    <div class="gallery-inner">
+        <div class="gallery-tag">📸 our moments</div>
+        <h1 class="gallery-title">Us, always ❤️</h1>
+        <p class="gallery-sub">Every photo holds a memory I'll keep forever</p>
+
+        <div class="gallery-grid">
+            <!-- Replace src with your actual photo filenames! -->
+            <div class="photo-card card-big">
+                <img src="Untitled design.png" alt="Memory 1">
+                <div class="photo-caption">besties forever 💗</div>
+            </div>
+            <div class="photo-card">
+                <img src="Untitled design.png" alt="Memory 2">
+                <div class="photo-caption">love you sm 🌸</div>
+            </div>
+            <div class="photo-card">
+                <img src="Untitled design.png" alt="Memory 3">
+                <div class="photo-caption">our vibe ✨</div>
+            </div>
+            <div class="photo-card card-wide">
+                <img src="Untitled design.png" alt="Memory 4">
+                <div class="photo-caption">memories 🎀</div>
+            </div>
+        </div>
+
+        <div class="gallery-footer">
+            <p>Happy almost-birthday bby 🎂💗</p>
+        </div>
+    </div>
+</div>
+
+
 <script src="script.js"></script>
-<audio id="introSound" src="sounds/intro.mp3"></audio>
-<audio id="btnSound" src="sounds/button.mp3"></audio>
 
 </body>
 </html>
