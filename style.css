@@ -42,9 +42,8 @@ html, body {
     flex-direction: column;
     text-align: center;
     padding-top: 5vh;
-    background-image: url("Untitled design.png");
+    background-image: none;
 }
-
 .title {
     font-size: 38px;
     color: #6b4d57;
